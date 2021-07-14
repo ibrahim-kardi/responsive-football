@@ -1,0 +1,339 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles or utilities */
+body{
+    font-family: 'Poppins';
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* banner section */
+.banner-section{
+width: 100%;
+height: 677px;
+left: 0px;
+top: 0px;
+display: flex;
+flex-direction: column;
+background: #2D25A0;
+align-items: center;
+}
+.left-container h2{
+    position: absolute;
+width: 485px;
+height: 230px;
+left: 156px;
+top: 207px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 80px;
+/* or 125% */
+color: #FFFFFF;
+}
+.left-container button{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 24px;
+    position: absolute;
+    width: 168px;
+    height: 44px;
+    left: 156px;
+    top: 463px;
+    background: #E02C6D;
+    color: #fff;
+    border: 0;
+    align-items: center;
+}
+.left-container button i{
+    margin-left: 8px;
+}
+.right-container img{
+    width: 520px;
+    height: 438px;
+    left: 827px;
+    top: 135px;
+    position: absolute;
+
+}
+
+
+
+
+/* -------------------
+    players styles 
+---------------------- */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    padding: 15px;
+    margin-left: 50px;
+    
+
+}
+.player{
+    padding: 15px;
+    width: 300px;
+    height: 456px;
+    left: 180px;
+    top: 747px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-bottom: 27px;
+
+}
+.player .player-banner img {
+    width: 300px;
+    height: 256px;
+}
+.player-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h3.player-title {
+    line-height: 10px;
+    size: 28px;
+}
+p.player-desc {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #695f5f;
+}
+/* heigh light section  */
+section.heigh-light-section {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.right-area img {
+    width: 567px;
+    height: 427px;
+    padding: 10px;
+}
+.left-area {
+    padding: 40px;
+}
+
+.left-area button{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 24px;
+    width: 168px;
+    height: 44px;
+    left: 156px;
+    top: 463px;
+    background: #E02C6D;
+    color: #fff;
+    border: 0;
+    align-items: center;
+}
+.left-area button i{
+    margin-left: 8px;
+}
+.player-img {
+    display: flex;
+}
+
+/* featured section */
+
+.player-img-item img {
+    height: 100px;
+    padding: 16px;
+    border-radius: 20px;
+}
+section.feature-players {
+    padding-left: 70px;
+}
+.partner-heading {
+    text-align: center;
+}
+/* News letter */
+section.news-letter {
+    text-align: center;
+    background-color: #fafafa;
+    height: 200px;
+    padding-top: 5px;
+}
+input[type=text], input[type=submit] {
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  input[type=submit] {
+    background-color: #111413;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+  section.news-letter {
+    text-align: center;
+    background-color: #fafafa;
+    height: 260px;
+    padding-top: 10px;
+}
+/* Footer section  */
+.logo-image img {
+    width: 262.1px;
+    height: 110px;
+}
+span.logo-image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-section p {
+    text-align: center;
+}
+.icons {
+    text-align: center;
+    color: #948a8a;
+}
+.icons i {
+
+    padding: 3px;
+}
+
+/* ---------------------
+    Media Queries 
+-----------------------*/
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .banner-section{
+        position: absolute;
+        width: 360px;
+        height: 695px;
+        left: 0px;
+         top: 0px;
+    }
+    .left-container h2{
+        position: absolute;
+        width: 278px;
+        height: 138px;
+        left: 16px;
+        top: 112px;
+    }
+
+     .players{
+        grid-template-columns: repeat(1, 1fr);
+        display: grid;
+        grid-column-gap: 0px;
+        padding: 10px;
+        margin-left: 0px;
+    }
+    .player{
+        flex-direction: column;
+    }
+    .left-container button {
+        left: 44px;
+        top: 275px;
+    }
+    .left-container h2 {
+        position: inherit;
+        width: 250px;
+        height: 326px;
+        left: 0px;
+        top: 0px;
+        font-size: 30px;
+        padding-left: 18px;
+    }
+    .right-container img {
+        width: 330px;
+        height: 300px;
+        left: 0px;
+        top: 336px;
+        position: absolute;
+    }
+    .left-area {
+        padding: 12px;
+        width: 270px;
+    }
+    section.heigh-light-section {
+       
+        grid-template-columns: repeat(1,1fr);
+    }
+    .right-area img {
+        width: 326px;
+        height: 296px;
+        padding: 10px;
+    }
+    
+.partner-heading {
+    text-align: left;
+}
+section.feature-players {
+    padding-left: 20px;
+}
+.player-img {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+section.news-letter {
+    height: 293px;
+    padding-top: 10px;
+    width: 330px;
+}
+section.player-section {
+    margin-top: 708px;
+}
+}
+
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .right-container img {
+        width: 440px;
+        height: 438px;
+        left: 320px;
+        top: 135px;
+        position: absolute;
+    }
+    .left-container h2 {
+        position: absolute;
+        width: 40%;
+        height: 169px;
+        left: 46px;
+        top: 207px;
+        font-size: 30px;
+        line-height: 70px;
+     
+    }
+     .players{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 19px;
+    }
+    .right-area img {
+        width: 508px;
+        height: 410px;
+        margin-top: 55px;
+    }
+    .player-img {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+ 
+}
